@@ -437,7 +437,7 @@ ZYDIS_EXPORT ZyanStatus ZydisEncoderEncodeInstruction(const ZydisEncoderRequest 
  * @return  A zyan status code.
  */
 ZYDIS_EXPORT ZyanStatus ZydisEncoderEncodeInstructionAbsolute(ZydisEncoderRequest *request,
-    void *buffer, ZyanUSize *length, ZyanU64 runtime_address);
+    void *buffer, ZyanUSize *length, ZyanU64 runtime_address, ZyanU64 newRuntimeAddress);
 
 /**
  * Converts decoded instruction to encoder request that can be passed to
